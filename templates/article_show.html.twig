@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block metaTitle %}
+    {{ categories.title }}
+{% endblock metaTitle %}
+
+    {% block header %}
+        <a href="http://127.0.0.1:8000/categorie"><img src="media/logo.png" alt="" class="resp"></a>
+    {% endblock %}
+
+    {% block main %}
+        <main>
+            <article>
+                <h1>{{ categories.title }}</h1>
+                <p>{{ categories.content }}</p>
+            </article>
+        </main>
+    {% endblock main %}
+
+    {% block text %}
+        <footer class="footer">
+
+        </footer>
+    {% endblock %}
